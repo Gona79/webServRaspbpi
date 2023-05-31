@@ -5,46 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control y Servicios</title>
-    <!-- Aquí irían los estilos CSS y los scripts JS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <div id="logo">Logotipo</div>
-        <nav>
-            <ul>
-                <li>Archivo
-                    <ul>
-                        <li>Inicio</li>
-                        <li>Acerca de</li>
-                    </ul>
-                </li>
-                <li>Modelos
-                    <ul>
-                        <li>Mecánicos</li>
-                        <li>Eléctricos</li>
-                        <li>Térmicos</li>
-                    </ul>
-                </li>
-                <li>Servicios
-                    <ul>
-                        <li>HTTP</li>
-                        <li>MQTT</li>
-                        <li>Rest</li>
-                        <li>JSON</li>
-                    </ul>
-                </li>
-                <li>Contacto
-                    <ul>
-                        <li>Información</li>
-                        <li>Ubicación</li>
-                        <li>Horarios</li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <div class="dropdown">
+            <button class="dropbtn">Archivo</button>
+            <div class="dropdown-content">
+                <a href="#">Inicio</a>
+                <a href="#">Acerca de</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Modelos</button>
+            <div class="dropdown-content">
+                <a href="#">Mecánicos</a>
+                <a href="#">Eléctricos</a>
+                <a href="#">Térmicos</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Servicios</button>
+            <div class="dropdown-content">
+                <a href="#">HTTP</a>
+                <a href="#">MQTT</a>
+                <a href="#">Rest</a>
+                <a href="#">JSON</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Contacto</button>
+            <div class="dropdown-content">
+                <a href="#">Información</a>
+                <a href="#">Ubicación</a>
+                <a href="#">Horarios</a>
+            </div>
+        </div>
     </header>
-
     <aside>
         <h3>Noticias y Actualizaciones</h3>
         <ul>
@@ -53,9 +52,7 @@
             <li>Noticia 3</li>
         </ul>
         <h3>Menús</h3>
-        <!-- El menú podría replicarse aquí, pero lo omito por brevedad -->
     </aside>
-
     <main>
         <section id="controladores">
             <h2>Controladores</h2>
@@ -66,12 +63,11 @@
             <p>Aquí encontrarás información sobre los servicios...</p>
         </section>
     </main>
-
     <footer>
         <p>Universidad XYZ - Departamento de Telecomunicaciones</p>
         <p>Copyright © 2023</p>
-        <!-- Los iconos de las redes sociales se añadirían aquí -->
     </footer>
+    <script src="style.js"></script>
 </body>
 
 </html>
