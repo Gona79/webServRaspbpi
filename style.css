@@ -18,26 +18,43 @@ header {
     color: white;
     padding: 10px 0;
     overflow: hidden;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     align-items: center;
 }
 
 #logo {
     font-size: 20px;
-    margin-left: 10px;
+    grid-column: 1 / 2;
+    margin-left: 20px;
 }
 
 .nav-menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-grow: 1;
+    grid-column: 2 / 13;
 }
 
 /* Estilo del menú desplegable */
 .dropdown {
     margin-left: 10px;
+}
+
+.dropdown.archivo {
+    grid-column: 4 / 5;
+}
+
+.dropdown.modelos {
+    grid-column: 5 / 6;
+}
+
+.dropdown.servicios {
+    grid-column: 6 / 7;
+}
+
+.dropdown.contacto {
+    grid-column: 11 / 12;
 }
 
 .dropbtn {
@@ -77,12 +94,16 @@ header {
 .content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    height: calc(100vh - 60px); /* Ajustar altura del contenido principal */
 }
 
 aside {
     grid-column: span 2;
     border-right: 1px solid #ccc;
     padding: 20px;
+    background-color: #999; 
+    height: 100%; /* Asegurar que el aside ocupe toda la altura disponible */
+    overflow-y: auto; /* Añadir barra de desplazamiento si el contenido supera la altura */
 }
 
 main {
