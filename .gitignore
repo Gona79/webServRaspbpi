@@ -1,0 +1,6 @@
+# se agrega carpeta .vscode para ignorar archivos de configuracion de visual studio code
+.vscode
+
+# se agrega style.css original donde no se utiliza grid-flexbox
+
+./css/style.css
