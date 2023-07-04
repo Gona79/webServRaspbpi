@@ -74,20 +74,16 @@ Como estudiante de desarrollo web, necesito crear y publicar una página web ava
 **Tareas a realizar para la creación de la página web avanzada con GitHub**  
   
 1) Crear la estructura HTML avanzada: Realizar una estructura del HTML prolija, limpia y fácil de leer.
+Seleccionar y utilizar un framework (Bootstrap o Grid + Flexbox): Las estructuras deben ser maquetadas a la web basándose en el framework elegido.
 
-2) Seleccionar y utilizar un framework (Bootstrap o Grid + Flexbox): Las estructuras deben ser maquetadas a la web basándose en el framework elegido.
+2) Crear y vincular el archivo CSS: Debe ser aplicado un estilo personalizado a la página web.
 
-3) Crear y vincular el archivo CSS: Debe ser aplicado un estilo personalizado a la página web.
+3) Personalizar estilos del framework: Adecuar los estilos del framework seleccionado para que se alineen con la estética de la página web.
 
-4) Personalizar estilos del framework: Adecuar los estilos del framework seleccionado para que se 5) alineen con la estética de la página web.
+4) Estructurar la web con CSS: La web debe ser estructurada para tener una apariencia ordenada y profesional.
 
-5) Estructurar la web con CSS: La web debe ser estructurada para tener una apariencia ordenada y profesional.
-
-6) Subir el proyecto a GitHub: Para compartir el trabajo realizado y mantener un registro del historial de versiones.
-
-7) Optimizar el sitio web para la velocidad: Debe garantizarse una experiencia de navegación rápida y fluida.
-
-8) Probar el sitio web en varios navegadores: Asegurarse de que funciona correctamente para todos los usuarios en diferentes navegadores.
+5) Optimizar el sitio web para la velocidad: Debe garantizarse una experiencia de navegación rápida y fluida.
+Probar el sitio web en varios navegadores: Asegurarse de que funciona correctamente para todos los usuarios en diferentes navegadores.
 
 
 
