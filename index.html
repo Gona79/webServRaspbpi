@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control y Servicios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
         <div id="logo">Logotipo</div>
-        <div class="nav-menu">
+        <nav class="nav-menu" id="myNav">
+            <button class="nav-toogle">
+                <i class="fa fa-bars"></i>
+            </button> 
             <div class="dropdown archivo">
                 <button class="dropbtn">Archivo</button>
                 <div class="dropdown-content">
@@ -44,7 +48,10 @@
                     <a href="#">Horarios</a>
                 </div>
             </div>
-        </div>
+            <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a> -->
+        </nav>
     </header>
     <div class="content">
         <aside>
@@ -78,6 +85,7 @@
             </section>
         </main>
     </div>
+
     <footer>
         <p>Universidad XYZ - Departamento de Telecomunicaciones</p>
         <p>Copyright © 2023</p>

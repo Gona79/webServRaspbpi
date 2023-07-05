@@ -1,0 +1,166 @@
+/* Estilos generales */
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+
+header {                 /* Ajustar el tamaño de la fuente */
+    background-color: #333;      /* Ajustar el color de fondo */
+    color: white;                /* Ajustar el color de la fuente */
+    padding: 10px 0;               /* Ajustar el padding */
+    overflow: hidden;              /* Ajustar el overflow */
+    display: grid;                 /* Ajustar el display */
+    grid-template-columns: repeat(12, 1fr);        /* Ajustar el grid */
+    align-items: center;                           /* Ajustar el alineamiento vertical */
+}
+
+#logo {                /* Ajustar el tamaño de la fuente */
+    font-size: 20px;               /* Ajustar el tamaño de la fuente */
+    /* grid-column: 1 / 2;            Ajustar el grid */
+    margin-left: 20px;             /* Ajustar el margen izquierdo */
+
+}
+
+.nav-toogle{
+    color: white; 
+    background: none;
+    border: none; 
+    padding: 0;
+    display: none;
+}
+
+.nav-menu {           /* Ajustar el tamaño de la fuente */              
+    display: flex;                       /* Ajustar el display */
+    justify-content: space-around;       /* Ajustar el alineamiento horizontal */
+    align-items: center;                 /* Ajustar el alineamiento vertical */
+    grid-column: 2 / 13;                 /* Ajustar el grid */
+}
+
+/* Estilo del menú desplegable */
+.dropdown {               
+    margin-left: 10px;                  /* Ajustar el margen izquierdo */  
+}
+
+.dropdown.archivo {
+    grid-column: 4 / 5;                /* Ajustar el grid de la seccion */
+}
+
+.dropdown.modelos {                   /* Ajustar el grid de la seccion */  
+    grid-column: 5 / 6;
+}
+
+.dropdown.servicios {
+    grid-column: 6 / 7;              /* Ajustar el grid de la seccion */
+}
+
+.dropdown.contacto {                 /* Ajustar el grid de la seccion */
+    grid-column: 11 / 12;
+}
+
+.dropbtn {                /* Ajustar el estilo del boton */
+    background-color: #333;       /* Ajustar el color de fondo */
+    color: white;                 /* Ajustar el color de la fuente */
+    padding: 16px;                  /* Ajustar el padding */
+    font-size: 16px;                /* Ajustar el tamaño de la fuente */
+    border: none;                   /* Ajustar el borde */
+    cursor: pointer;                /* Ajustar el cursor */   
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: #f9f9f9;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    flex-grow: 1;  /* Esta línea hace que el contenido ocupe todo el espacio disponible */
+    background-color: #f0f0f0;
+}
+
+aside {
+    grid-column: span 2;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+    background-color: #999;
+    height: 100%;
+    overflow-y: auto;
+}
+
+main {
+    grid-column: span 10;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+/* Estilos responsive */
+
+@media (max-width: 768px) {
+    .nav-menu a:not(:last-child) {
+        display: none;
+    }
+
+    #logo {
+        font-size: 16px;
+    }
+
+    /* Visualizar menu hamburgueza y ubicar el  boton en la parte superior derecha y que se vea delante de todo, es decir traer al frente*/
+    .nav-toogle {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        font-size: 1.8rem;
+        margin-right: 20px;
+    }
+
+    .dropbtn{
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+}
