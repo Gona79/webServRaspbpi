@@ -109,6 +109,8 @@ header {                 /* Ajustar el tamaño de la fuente */
 }
 
 aside {
+    font-family: Arial, sans-serif; 
+    font-size: 18px; 
     grid-column: span 2;
     border-right: 1px solid #ccc;
     padding: 20px;
@@ -116,6 +118,26 @@ aside {
     height: 100%;
     overflow-y: auto;
 }
+
+/* Eliminar el estilo de lista */
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Configurar el estilo de los enlaces */
+aside ul li a {
+    text-decoration: none;
+    color: black; /* o cualquier color de texto que desees */
+    display: block;
+    padding: 5px 0;
+}
+
+/* Cambiar el color de fondo cuando se pasa el mouse sobre un enlace */
+aside ul li a:hover {
+    background-color: rgb(79, 77, 77); /* definir color */
+}
+
 
 main {
     grid-column: span 10;
@@ -134,18 +156,19 @@ footer {
     margin-top: auto;
 }
 
+
 /* Estilos responsive */
-
 @media (max-width: 768px) {
-    .nav-menu a:not(:last-child) {
+    .nav-menu {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        background-color: #333;
     }
 
-    #logo {
-        font-size: 16px;
-    }
-
-    /* Visualizar menu hamburgueza y ubicar el  boton en la parte superior derecha y que se vea delante de todo, es decir traer al frente*/
     .nav-toogle {
         display: block;
         position: absolute;
@@ -156,8 +179,26 @@ footer {
         margin-right: 20px;
     }
 
-    .dropbtn{
-        display: none;
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-menu .dropdown {
+        margin: 0;
+        display: block; /* Asegurarse de que los dropdowns se muestren como bloques */
+    }
+
+    .nav-menu .dropdown .dropbtn {
+        text-align: left;
+        display: block; /* Asegurarse de que los botones se muestren */
+    }
+
+    .nav-menu .dropdown .dropdown-content {
+        display: none; /* Ocultar inicialmente el contenido del dropdown */
+    }
+
+    .nav-menu .dropdown.open .dropdown-content {
+        display: block; /* Mostrar el contenido del dropdown cuando está abierto */
     }
 
     aside {
