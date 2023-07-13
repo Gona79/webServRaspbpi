@@ -1,0 +1,15 @@
+{
+  "name": "3_preentregable3vera",
+  "version": "1.0.0",
+  "description": "Para poner en práctica todos los conocimientos adquiridos, te proponemos avanzar con la estructura avanzada y el uso colaborativo con GitHub.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/style.scss:css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
