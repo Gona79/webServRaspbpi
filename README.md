@@ -70,7 +70,7 @@ Este trabajo cuenta con tres instancias (puedes compartir la URL de tu repositor
 
 Como estudiante de desarrollo web, necesito crear y publicar una página web avanzada con los lineamientos planteados mas arriba para demostrar y aplicar mis habilidades de desarrollo web y asi aprobar esta preentrega. 
 
-## Product Backlog:  
+## Product Backlog: Preentregable #2 
 **Tareas a realizar para la creación de la página web avanzada con GitHub**  
   
 1) Crear la estructura HTML avanzada: Realizar una estructura del HTML prolija, limpia y fácil de leer.
@@ -84,6 +84,17 @@ Seleccionar y utilizar un framework (Bootstrap o Grid + Flexbox): Las estructura
 
 5) Optimizar el sitio web para la velocidad: Debe garantizarse una experiencia de navegación rápida y fluida.
 Probar el sitio web en varios navegadores: Asegurarse de que funciona correctamente para todos los usuarios en diferentes navegadores.
+
+## Continuacion Product Backlog: Preentregable #3  
+
+6) Tu archivo SCSS debe contar con las siguientes características:
+
+● Trasladar los estilos creados en CSS a SCSS:  
+Uso correcto del nesting, extend, los mixins, las variables y los operadores de lenguaje SASS.  
+● Estilos avanzados:  
+Genera una estructura de elementos dinámica aplicando transformaciones, transiciones y/o animaciones.  
+
+
 
 
 
