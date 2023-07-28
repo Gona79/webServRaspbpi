@@ -1,4 +1,27 @@
-# se agrega carpeta .vscode para ignorar archivos de configuracion de visual studio code
-.vscode
+# .gitignore
+
+# Ignora los directorios node_modules
+node_modules/
+
+# Ignora todos los archivos .log
+*.log
+
+# Ignora los archivos .env que contienen variables de entorno
+.env
+
+# Ignora la carpeta .vscode
+.vscode/
+
+# Ignora la carpeta wireframes
+wireframes/
+
+# Si estás usando Sass, puedes optar por ignorar los archivos SCSS
+scss/
+
+# ignora readme y .json
+README.md
+package.json
+
+
 
 
