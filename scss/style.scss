@@ -157,323 +157,84 @@ aside {
 main {
     grid-column: span 10;
     padding: 20px;
-    @include flex-center;
+    //@include flex-center;
     text-align: center;
 
 }
 
+// Mixin para secciones
+@mixin section-styles {
+    width: 60%; 
+    max-width: 700px; 
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid $secondary-color;
+    background-color: $white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+    font-family: 'Georgia', serif;
+    color: $main-color;
+    text-align: justify;
+    line-height: 1.5;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+}
+
+// Uso del mixin
 .acerca-section {
-    width: 60%; 
-    max-width: 700px; 
-    margin: 2rem auto;
-    padding: 2rem;
-    border: 1px solid $secondary-color;
-    background-color: $white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
-    font-family: 'Georgia', serif;
-    color: $main-color;
-    text-align: justify;
-    line-height: 1.5;
-
-    h2 {
-        margin-bottom: 1rem;
-    }
-
-    p {
-        margin-bottom: 1rem;
-    }
+    @include section-styles;
 }
 
-// Estilos específicos de la sección Modelos Mecánicos
 .mecanico-section {
-    width: 60%; 
-    max-width: 700px; 
-    margin: 2rem auto;
-    padding: 2rem;
-    border: 1px solid $secondary-color;
-    background-color: $white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
-    font-family: 'Georgia', serif;
-    color: $main-color;
-    text-align: justify;
-    line-height: 1.5;
-
-    h2 {
-        margin-bottom: 1rem;
-    }
-
-    h3 {
-        margin-bottom: 0.5rem;
-    }
-
-    p {
-        margin-bottom: 1rem;
-    }
-
-    ul {
-        padding-left: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    li {
-        margin-bottom: 0.5rem;
-    }
+    @include section-styles;
 }
 
-// Estilos específicos de la sección Modelos Eléctricos
 .electricos-section {
-    width: 60%; 
-    max-width: 700px; 
-    margin: 2rem auto;
-    padding: 2rem;
-    border: 1px solid $secondary-color;
-    background-color: $white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
-    font-family: 'Georgia', serif;
-    color: $main-color;
-    text-align: justify;
-    line-height: 1.5;
-
-    h2 {
-        margin-bottom: 1rem;
-    }
-
-    h3 {
-        margin-bottom: 0.5rem;
-    }
-
-    p {
-        margin-bottom: 1rem;
-    }
-
-    ul {
-        padding-left: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    li {
-        margin-bottom: 0.5rem;
-    }
-    
+    @include section-styles;
 }
 
-// Estilos específicos de la sección Modelos Térmicos
 .termicos-section {
-    width: 60%; 
-    max-width: 700px; 
-    margin: 2rem auto;
-    padding: 2rem;
-    border: 1px solid $secondary-color;
-    background-color: $white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
-    font-family: 'Georgia', serif;
-    color: $main-color;
-    text-align: justify;
-    line-height: 1.5;
-
-    h2 {
-        margin-bottom: 1rem;
-    }
-
-    h3 {
-        margin-bottom: 0.5rem;
-    }
-
-    p {
-        margin-bottom: 1rem;
-    }
-
-    ul {
-        padding-left: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    li {
-        margin-bottom: 0.5rem;
-    }
+    @include section-styles;
 }
 
-// Estilos específicos de la sección Servicios HTTP
 .http-section {
-    width: 60%; 
-    max-width: 700px; 
-    margin: 2rem auto;
-    padding: 2rem;
-    border: 1px solid $secondary-color;
-    background-color: $white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
-    font-family: 'Georgia', serif;
-    color: $main-color;
-    text-align: justify;
-    line-height: 1.5;
-
-    h2 {
-        margin-bottom: 1rem;
-    }
-
-    h3 {
-        margin-bottom: 0.5rem;
-    }
-
-    p {
-        margin-bottom: 1rem;
-    }
-
-    ul {
-        padding-left: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    li {
-        margin-bottom: 0.5rem;
-    }
+    @include section-styles;
 }
 
-
-// Estilos específicos de la sección MQTT
 .mqtt-section {
-    width: 60%; 
-    max-width: 700px; 
-    margin: 2rem auto;
-    padding: 2rem;
-    border: 1px solid $secondary-color;
-    background-color: $white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
-    font-family: 'Georgia', serif;
-    color: $main-color;
-    text-align: justify;
-    line-height: 1.5;
-
-    h2 {
-        margin-bottom: 1rem;
-    }
-
-    h3 {
-        margin-bottom: 0.5rem;
-    }
-
-    p {
-        margin-bottom: 1rem;
-    }
-
-    ul {
-        padding-left: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    li {
-        margin-bottom: 0.5rem;
-    }
+    @include section-styles;
 }
 
-// Estilos específicos de la sección REST
 .rest-section {
-    width: 60%; 
-    max-width: 700px; 
-    margin: 2rem auto;
-    padding: 2rem;
-    border: 1px solid $secondary-color;
-    background-color: $white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
-    font-family: 'Georgia', serif;
-    color: $main-color;
-    text-align: justify;
-    line-height: 1.5;
-
-    h2 {
-        margin-bottom: 1rem;
-    }
-
-    h3 {
-        margin-bottom: 0.5rem;
-    }
-
-    p {
-        margin-bottom: 1rem;
-    }
-
-    ul {
-        padding-left: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    li {
-        margin-bottom: 0.5rem;
-    }
+    @include section-styles;
 }
 
-// Estilos específicos de la sección JSON
 .json-section {
-    width: 60%; 
-    max-width: 700px; 
-    margin: 2rem auto;
-    padding: 2rem;
-    border: 1px solid $secondary-color;
-    background-color: $white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
-    font-family: 'Georgia', serif;
-    color: $main-color;
-    text-align: justify;
-    line-height: 1.5;
-
-    h2 {
-        margin-bottom: 1rem;
-    }
-
-    h3 {
-        margin-bottom: 0.5rem;
-    }
-
-    p {
-        margin-bottom: 1rem;
-    }
-
-    ul {
-        padding-left: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    li {
-        margin-bottom: 0.5rem;
-    }
+    @include section-styles;
 }
 
-// Estilos específicos de la sección info
 .info-section {
-    width: 60%; 
-    max-width: 700px; 
-    margin: 2rem auto;
-    padding: 2rem;
-    border: 1px solid $secondary-color;
-    background-color: $white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
-    font-family: 'Georgia', serif;
-    color: $main-color;
-    text-align: justify;
-    line-height: 1.5;
-
-    h2 {
-        margin-bottom: 1rem;
-    }
-
-    h3 {
-        margin-bottom: 0.5rem;
-    }
+    @include section-styles;
 
     h4 {
-        margin-bottom: 0.5rem;
-    }
-
-    p {
-        margin-bottom: 1rem;
-    }
-
-    ul {
-        padding-left: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    li {
         margin-bottom: 0.5rem;
     }
 }
@@ -571,61 +332,61 @@ footer {
     }
 
     .acerca-section {
-        width: 85%;
+        width: 120%;
         padding: 1rem;
         font-size: 16px;
     }
 
     .mecanico-section {
-        width: 85%;
+        width: 120%;
         padding: 1rem;
         font-size: 16px;
     }
 
     .electricos-section {
-        width: 85%;
+        width: 120%;
         padding: 1rem;
         font-size: 16px;
     }
 
     .termicos-section {
-        width: 85%;
+        width: 120%;
         padding: 1rem;
         font-size: 16px;
     }
 
     .http-section {
-        width: 85%;
+        width: 120%;
         padding: 1rem;
         font-size: 16px;
     }
 
     .mqtt-section {
-        width: 85%;
+        width: 120%;
         padding: 1rem;
         font-size: 16px;
     }
 
     .rest-section {
-        width: 85%;
+        width: 120%;
         padding: 1rem;
         font-size: 16px;
     }
 
     .json-section {
-        width: 85%;
+        width: 120%;
         padding: 1rem;
         font-size: 16px;
     }
 
     .info-section {
-        width: 85%;
+        width: 120%;
         padding: 1rem;
         font-size: 16px;
     }
 
     .horarios-section{
-        padding: 20px;
+        padding: 5px;
         max-width: 100%; 
         h2 {
             font-size: 1.5em;
@@ -654,31 +415,33 @@ footer {
 
 .home-section {
     display: flex;
-    align-items: stretch; // Hace que los hijos de flex tengan la misma altura
+    align-items: stretch; 
     margin-bottom: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
 
     .section-image {
-        flex: 1; // Ambos, la imagen y el contenido, toman la mitad del espacio disponible
+        flex: 1; 
         background-size: cover;
         background-position: center;
     }
 
     .section-content {
-        flex: 1; // Ambos, la imagen y el contenido, toman la mitad del espacio disponible
+        flex: 1; 
         padding: 2rem;
         background-color: rgba(255, 255, 255, 0.9);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
-        z-index: 0; // Modificado a 0 para asegurar que los menús aparezcan encima
+        z-index: 0; 
         display: flex;
         flex-direction: column;
         justify-content: center;
 
         // Estilos de texto
-        font-family: 'Open Sans', Arial, sans-serif; // Cambia esto a la fuente que prefieras
+        font-family: 'Open Sans', Arial, sans-serif; 
         text-align: justify;
 
         h2 {
+            padding: 1rem;
+            margin: 2rem;
             margin-bottom: 1rem;
             color: $main-color;
         }
@@ -690,9 +453,19 @@ footer {
 
     @media (max-width: 768px) {
         flex-direction: column;
-
+        width: 120%;
+        
         .section-image {
-            height: 200px;
+            display: none; 
+        }
+
+        .section-content {
+            box-shadow: none; 
+            z-index: 9999;  /* nuevo z-index para que el contenido no tape el menú */
+        }
+
+        .nav-toogle {
+            z-index: 10000; /* z-index aún más alto para el menú hamburguesa */
         }
     }
 }
