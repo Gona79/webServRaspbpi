@@ -52,11 +52,11 @@
     </header>
     <div class="content">
         <aside>
-            <h3>Noticias</h3>
+            <h3>Recursos</h3>
             <ul>
-                <li><a href="#">Noticia 1</a></li>
-                <li><a href="#">Noticia 2</a></li>
-                <li><a href="#">Noticia 3</a></li>
+                <li><a href="https://acceso.ispc.edu.ar/course/view.php?id=2401" target="_blank">Aula Virtual</a></li>
+                <li><a href="https://www.ispc.edu.ar/" target="_blank">ISPC</a></li>
+                <li><a href="https://www.weather.com/" target="_blank">Clima</a></li>
             </ul>
             <h3>Modelos y Servicios</h3>
             <ul>
@@ -72,9 +72,19 @@
             </ul>
         </aside>
         <main>
-            <section id="servicios">
-                <h2>Servicios del IoT</h2>
-                <p>Aquí encontrarás información sobre el protocolo mqtt y servicios</p>
+            <section id="mqtt" class="mqtt-section">
+                <h2>MQTT en Sistemas de Control</h2>
+                <p>MQTT (Message Queuing Telemetry Transport) es un protocolo de mensajería ligero de publicación/subscripción optimizado para dispositivos conectados de baja potencia y con ancho de banda limitado. Debido a sus características únicas, MQTT se ha convertido en una opción popular para la comunicación en sistemas de control IoT (Internet of Things).</p>
+                <h3>Funcionamiento de MQTT</h3>
+                <p>MQTT se basa en el modelo de publicación/subscripción. Los dispositivos publican mensajes en "temas" y otros dispositivos pueden suscribirse a estos temas para recibir los mensajes. Un servidor MQTT, también conocido como "broker", se encarga de distribuir los mensajes a los dispositivos suscriptores.</p>
+                <h3>Beneficios de MQTT</h3>
+                <p>Algunas de las ventajas que aporta MQTT en sistemas de control son:</p>
+                <ul>
+                    <li><strong>Efficiencia:</strong> MQTT es un protocolo ligero que utiliza poca cantidad de datos, lo que es ideal para redes con ancho de banda limitado.</li>
+                    <li><strong>Baja latencia:</strong> MQTT proporciona entrega de mensajes con baja latencia, lo cual es crítico en aplicaciones de control en tiempo real.</li>
+                    <li><strong>Fiabilidad:</strong> Ofrece diferentes niveles de QoS (Quality of Service) para asegurar la entrega de mensajes.</li>
+                </ul>
+                <p>En resumen, MQTT se ha convertido en una tecnología crucial para conectar y controlar dispositivos IoT de forma segura y eficiente.</p>
             </section>
         </main>
     </div>

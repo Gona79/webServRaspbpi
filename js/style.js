@@ -9,12 +9,19 @@ var dropdownBtns = nav.getElementsByClassName("dropbtn");
 
 for (var i = 0; i < dropdownBtns.length; i++) {
     dropdownBtns[i].addEventListener("click", function (e) {
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
+        var dropdown = this.parentElement;
+        if (dropdown.classList.contains("open")) {
+            dropdown.classList.remove("open");
         } else {
-            dropdownContent.style.display = "block";
+            dropdown.classList.add("open");
         }
         e.stopPropagation();
     });
 }
+
+document.addEventListener('click', function() {
+    var dropdowns = document.getElementsByClassName('dropdown');
+    for (var i = 0; i < dropdowns.length; i++) {
+        dropdowns[i].classList.remove('open');
+    }
+});
