@@ -52,11 +52,11 @@
     </header>
     <div class="content">
         <aside>
-            <h3>Noticias</h3>
+            <h3>Recursos</h3>
             <ul>
-                <li><a href="#">Noticia 1</a></li>
-                <li><a href="#">Noticia 2</a></li>
-                <li><a href="#">Noticia 3</a></li>
+                <li><a href="https://acceso.ispc.edu.ar/course/view.php?id=2401" target="_blank">Aula Virtual</a></li>
+                <li><a href="https://www.ispc.edu.ar/" target="_blank">ISPC</a></li>
+                <li><a href="https://www.weather.com/" target="_blank">Clima</a></li>
             </ul>
             <h3>Modelos y Servicios</h3>
             <ul>
@@ -72,9 +72,18 @@
             </ul>
         </aside>
         <main>
-            <section id="servicios">
-                <h2>Servicios del IoT</h2>
-                <p>Aquí encontrarás información sobre el protocolo http y servicios</p>
+            <section id="servicios" class="http-section">
+                <h2>Servicios HTTP en Sistemas de Control</h2>
+                <p>Los servicios HTTP (Hypertext Transfer Protocol) juegan un papel esencial en los sistemas de control modernos. Facilitan la comunicación entre diferentes sistemas y permiten intercambiar información a través de la web. HTTP es el protocolo de red subyacente en cualquier sistema de información basado en la web, incluidos los sistemas de control basados en la web.</p>
+                <h3>Métodos HTTP</h3>
+                <p>HTTP define un conjunto de métodos de solicitud para indicar la acción deseada que se debe realizar en un recurso. Los más comunes son:</p>
+                <ul>
+                    <li><strong>GET:</strong> Solicita una representación del recurso especificado.</li>
+                    <li><strong>POST:</strong> Envía datos para ser procesados a un recurso especificado.</li>
+                    <li><strong>PUT:</strong> Reemplaza todas las representaciones actuales del recurso objetivo con la carga útil de la petición.</li>
+                    <li><strong>DELETE:</strong> Borra el recurso especificado.</li>
+                </ul>
+                <p>Estos métodos son cruciales para implementar la funcionalidad de un sistema de control basado en la web. Por ejemplo, podrías usar el método POST para enviar una nueva configuración al sistema de control, o el método GET para obtener el estado actual del sistema.</p>
             </section>
         </main>
     </div>
